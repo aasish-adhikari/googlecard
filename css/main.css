@@ -1,0 +1,98 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    position: relative;
+    border-radius: 0.25rem;
+    oveflow: hidden;
+    width: 344px;
+    height: 380px;
+    border: 1px solid #adadad;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card--museum-image{
+    background-image: url("../images/museum-art.JPG");
+}
+.card--tangentyere-image{
+    background-image: url("../images/tangentyere.jpg");
+}
+
+.card__image {
+    width: 100%;
+    padding-bottom: 56.25%;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter:contrast(85%);
+    z-index: -1;
+}
+
+.card__image:hover{
+    filter: contrast(100%);
+}
+
+.card__title{
+    font-size: 24px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 132px;
+    padding:24px 16px 16px 16px;
+}
+
+.card__text{
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 194px;
+    padding: 16px;
+    font-size: 14px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+.card__action{
+    position: absolute;
+    overflow: hidden;
+    top: 312px;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    height: 52px;
+
+}
+.card__button{
+    padding: 0 4px;
+    line-height: 52px;
+    font-size: 14px;
+}
+button{
+    padding: 19px 16px;
+    border: none;
+    background-color: #ffffff;
+}
+
