@@ -15,7 +15,7 @@ body{
 
 .card{
     position: relative;
-    border-radius: 0.25rem;
+    border-radius: 0.50rem;
     oveflow: hidden;
     width: 344px;
     height: 380px;
@@ -24,8 +24,9 @@ body{
 
 .card:hover{
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
 
 .card--museum-image{
     background-image: url("../images/museum-art.JPG");
